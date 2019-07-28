@@ -1,8 +1,8 @@
-# Particle3DByThree
+# Particle3D
 
 ## 原理
 
-这个效果在[3D Particle Explorations](https://tympanus.net/Development/3d-particle-explorations/index3.html#debug)。觉得蛮有意思满酷炫就研究实现了一下。  
+这个效果在[3D Particle](https://tympanus.net/Development/3d-particle-explorations/index3.html#debug)。觉得蛮有意思满酷炫就研究实现了一下。  
 
 ### 基元
 
@@ -142,20 +142,4 @@ for (let i = 0; i < count; i += 1) {
     const dist = dx * dx + dy * dy;
     const radii = (p1.size + p2.size) * (p1.size + p2.size) + spacing;
 
-    if (dist < radii) {
-      const angle = Math.atan2(dy, dx) + generateRandom(-0.05, 0.05);
-      const diff = radii - dist;
-      const x = Math.cos(angle) * diff * 0.05;
-      const y = Math.sin(angle) * diff * 0.05;
-      p1Pos.x += x * dTime;
-      p1Pos.y += y * dTime;
-      p2Pos.x -= x * dTime;
-      p2Pos.y -= y * dTime;
-    }
-  }
-}
-```
-
-这段代码简单明（cu）了（bao），就是遍历每一个粒子，然后去计算其他粒子对该粒子的力的作用，这里要注意两个约束：只有出生了的粒子才会进行计算，只有在两个粒子的间隙小于约束的间隙时才会进行调整，这样可以避免无效和错误的计算。
-
-至此，整个系统就可以完美运行了。
+    if (dis
