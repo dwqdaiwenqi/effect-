@@ -2,7 +2,7 @@
 
 ## 原理
 
-这个效果是[3D Particle Explorations](https://tympanus.net/Development/3d-particle-explorations/)其中之一的实现。觉得蛮有意思满酷炫就研究实现了一下。  
+这个效果在[3D Particle Explorations](https://tympanus.net/Development/3d-particle-explorations/index3.html#debug)。觉得蛮有意思满酷炫就研究实现了一下。  
 
 ### 基元
 
